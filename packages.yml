@@ -216,6 +216,12 @@ packages:
   path: libs/ai21
   downloads: 2000
   downloads_updated_at: "2026-05-11T00:21:45.679408+00:00"
+- name: langchain-alephantai
+  name_title: Alephant AI
+  repo: AlephantAI/alephant-python-sdk
+  path: packages/langchain-alephantai
+  downloads: 0
+  downloads_updated_at: "2026-05-16T00:00:00+00:00"
 - name: langchain-aws
   name_title: AWS
   highlight: true
