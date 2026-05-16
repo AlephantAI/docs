@@ -52,7 +52,7 @@ from langchain_alephantai import ChatAlephantAI
 
 llm = ChatAlephantAI(
     api_key=os.environ["ALEPHANT_API_KEY"],
-    model="gpt-4o-mini",
+    model="gpt-5.4-mini",
     session_name="langchain-chat",
 )
 ```
@@ -62,7 +62,7 @@ llm = ChatAlephantAI(
 ```python
 llm = ChatAlephantAI(
     api_key=os.environ["ALEPHANT_API_KEY"],
-    model="gpt-4o-mini",
+    model="gpt-5.4-mini",
     session_name="langchain-chat",
     temperature=0,
     timeout=30,
@@ -96,23 +96,23 @@ context = AlephantGatewayContext(session_name="customer-support-eval")
 
 llm = ChatAlephantAI(
     api_key=os.environ["ALEPHANT_API_KEY"],
-    model="gpt-4o-mini",
+    model="gpt-5.4-mini",
     context=context,
 )
 ```
 
 ## Custom gateway URL
 
-Use `base_url` when testing against another Alephant AI Gateway endpoint.
+By default, `ChatAlephantAI` sends requests to `https://ai.alephant.io/v1`. Use `base_url` only when testing against another Alephant AI Gateway endpoint.
 
 ```python
 from langchain_alephantai import ChatAlephantAI
 
 llm = ChatAlephantAI(
     api_key=os.environ["ALEPHANT_API_KEY"],
-    model="gpt-4o-mini",
+    model="gpt-5.4-mini",
     session_name="langchain-chat",
-    base_url="https://ai.alephant.io/v1",
+    base_url="https://your-gateway.example.com/v1",
 )
 ```
 
